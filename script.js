@@ -8,8 +8,8 @@ const portfolio = {
   email: 'you@example.com',
   location: 'Your City · Remote-friendly',
   availability: 'Open to interesting opportunities',
-  github: 'https://github.com/yourusername',
-  linkedin: 'https://www.linkedin.com/in/yourusername/',
+  github: 'https://github.com/jasonlau971114',
+  linkedin: 'https://www.linkedin.com/in/jasonlau971114/',
   headline: "I'm a senior software engineer who turns complex problems into thoughtful, fast, and dependable digital experiences. I love clean architecture, well-crafted products, and teams that ship.",
   about: 'I care about the whole picture: the people using the product, the engineers maintaining it, and the systems keeping it running. My approach is equal parts curiosity, pragmatism, and craftsmanship. I enjoy mentoring teammates and making hard technical decisions feel simple.',
   stats: { years: '8+', projects: '20+', focus: '100%' },
@@ -20,10 +20,10 @@ const portfolio = {
     leadership: ['System Design', 'Mentoring', 'Code Review', 'Agile']
   },
   projects: [
-    { title: 'Distributed Task Platform', category: 'backend', categoryLabel: 'Backend / Infrastructure', description: 'A fault-tolerant task processing platform with durable queues, automated retries, metrics, and API-first integrations.', tech: ['Python', 'Redis', 'Docker'], github: 'https://github.com/yourusername', demo: '', glyph: '⌘', dark: '#1b3456', light: '#3962a5' },
-    { title: 'Commerce Analytics Dashboard', category: 'fullstack', categoryLabel: 'Full Stack / Data', description: 'An interactive analytics experience that transforms complex sales data into fast, actionable insights.', tech: ['React', 'TypeScript', 'PostgreSQL'], github: 'https://github.com/yourusername', demo: '', glyph: '▥', dark: '#183e46', light: '#268d8b' },
-    { title: 'Intelligent Document Search', category: 'ai', categoryLabel: 'AI / Machine Learning', description: 'Semantic retrieval over documents, with embeddings, relevance scoring, and a clean search interface.', tech: ['Python', 'FastAPI', 'Vector Search'], github: 'https://github.com/yourusername', demo: '', glyph: '✳', dark: '#3b295a', light: '#7451b7' },
-    { title: 'Developer Experience Toolkit', category: 'backend', categoryLabel: 'Developer Tools', description: 'A collection of internal automation tools to simplify service scaffolding, testing, and deployments.', tech: ['Go', 'GitHub Actions', 'CLI'], github: 'https://github.com/yourusername', demo: '', glyph: '⚡', dark: '#4b3447', light: '#ad5a85' }
+    { title: 'Distributed Task Platform', category: 'backend', categoryLabel: 'Backend / Infrastructure', description: 'A fault-tolerant task processing platform with durable queues, automated retries, metrics, and API-first integrations.', tech: ['Python', 'Redis', 'Docker'], github: 'https://github.com/jasonlau971114', demo: '', glyph: '⌘', dark: '#1b3456', light: '#3962a5' },
+    { title: 'Commerce Analytics Dashboard', category: 'fullstack', categoryLabel: 'Full Stack / Data', description: 'An interactive analytics experience that transforms complex sales data into fast, actionable insights.', tech: ['React', 'TypeScript', 'PostgreSQL'], github: 'https://github.com/jasonlau971114', demo: '', glyph: '▥', dark: '#183e46', light: '#268d8b' },
+    { title: 'Intelligent Document Search', category: 'ai', categoryLabel: 'AI / Machine Learning', description: 'Semantic retrieval over documents, with embeddings, relevance scoring, and a clean search interface.', tech: ['Python', 'FastAPI', 'Vector Search'], github: 'https://github.com/jasonlau971114', demo: '', glyph: '✳', dark: '#3b295a', light: '#7451b7' },
+    { title: 'Developer Experience Toolkit', category: 'backend', categoryLabel: 'Developer Tools', description: 'A collection of internal automation tools to simplify service scaffolding, testing, and deployments.', tech: ['Go', 'GitHub Actions', 'CLI'], github: 'https://github.com/jasonlau971114', demo: '', glyph: '⚡', dark: '#4b3447', light: '#ad5a85' }
   ],
   experience: [
     { dates: '2022 — Present', role: 'Senior Software Engineer', company: 'Example Company · Remote', description: 'Led architecture and delivery of scalable services, partnered with product teams, and mentored engineers.' },
