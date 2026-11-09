@@ -20,6 +20,7 @@ const portfolio = {
     cloud: ['AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Terraform'],
     leadership: ['System Design', 'Mentoring', 'Code Review', 'Agile']
   },
+  
   projects: [
     { title: 'Distributed Task Platform', category: 'backend', categoryLabel: 'Backend / Infrastructure', description: 'A fault-tolerant task processing platform with durable queues, automated retries, metrics, and API-first integrations.', tech: ['Python', 'Redis', 'Docker'], github: 'https://github.com/jasonlau971114/scheduleCreater', demo: '', glyph: '⌘', dark: '#1b3456', light: '#3962a5' },
     { title: 'Commerce Analytics Dashboard', category: 'fullstack', categoryLabel: 'Full Stack / Data', description: 'An interactive analytics experience that transforms complex sales data into fast, actionable insights.', tech: ['React', 'TypeScript', 'PostgreSQL'], github: 'https://github.com/jasonlau971114/dokkanyEcommerce', demo: '', glyph: '▥', dark: '#183e46', light: '#268d8b' },
