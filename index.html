@@ -1,70 +1,61 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Software Engineering Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #101827;
-      color: white;
-      margin: 0;
-      line-height: 1.6;
-    }
-    header, section {
-      max-width: 850px;
-      margin: auto;
-      padding: 35px 20px;
-    }
-    header { text-align: center; padding-top: 80px; }
-    h1 { font-size: 42px; }
-    h2 { color: #38bdf8; }
-    a { color: #38bdf8; }
-    .card {
-      background: #1e293b;
-      border-radius: 12px;
-      padding: 24px;
-      margin: 16px 0;
-    }
-  </style>
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Portfolio of Jasonlau Morgan, a senior software engineer building reliable, scalable products.">
+  <title>Jasonlau Morgan — Senior Software Engineer</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Hello, I'm Your Name</h1>
-    <p>Software Engineer | AI Enthusiast</p>
-    <a href="https://github.com/yourusername">
-      My GitHub
-    </a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Back to top"><span class="brand-mark">A<span class="brand-dot">.</span></span><span class="brand-name">Jasonlau<span class="muted">/</span>dev</span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-controls="navLinks" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+        <a class="nav-resume" href="resume.html" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>I build software and enjoy solving
-       challenging engineering problems.</p>
-  </section>
+  <main id="main">
+    <section class="hero shell" id="home" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <div class="availability"><span class="pulse" aria-hidden="true"></span><span id="statusText">Open to interesting opportunities</span></div>
+        <p class="eyebrow">HELLO, I'M <span id="heroFirstName">Jasonlau</span> <span class="asterisk">✳</span></p>
+        <h1 id="heroTitle">Engineering <span class="text-gradient">what's next.</span></h1>
+        <p class="hero-description" id="heroDescription">I'm a senior software engineer who turns complex problems into thoughtful, fast, and dependable digital experiences. I love clean architecture, well-crafted products, and teams that ship.</p>
+        <div class="hero-actions"><a class="button primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a><a class="button ghost" href="resume.html" target="_blank" rel="noopener">View resume <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-socials" aria-label="Social profiles"><a id="githubLink" href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a id="linkedinLink" href="https://www.linkedin.com/in/yourusername/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><span class="hero-location" id="locationText">Based in Your City · Remote-friendly</span></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative code editor illustration" role="img">
+        <div class="editor-card">
+          <div class="editor-bar"><span class="dots"><i></i><i></i><i></i></span><span>about-me.ts</span><span class="editor-icon">⌘</span></div>
+          <div class="editor-code"><div><span class="line-num">01</span><span class="purple">const</span> engineer = {</div><div><span class="line-num">02</span>  name: <span class="mint" id="editorName">'Jasonlau Morgan'</span>,</div><div><span class="line-num">03</span>  role: <span class="mint">'Senior Engineer'</span>,</div><div><span class="line-num">04</span>  loves: [</div><div><span class="line-num">05</span>    <span class="mint">'architecture'</span>,</div><div><span class="line-num">06</span>    <span class="mint">'performance'</span>,</div><div><span class="line-num">07</span>    <span class="mint">'building things'</span></div><div><span class="line-num">08</span>  ],</div><div><span class="line-num">09</span>  mindset: <span class="mint">'always learning'</span></div><div><span class="line-num">10</span>};</div><div><span class="line-num">11</span><span class="comment">// Let's make something great.</span></div></div>
+          <div class="editor-footer"><span>● Typescript</span><span>UTF-8&nbsp;&nbsp;·&nbsp;&nbsp;Ln 11</span></div>
+        </div>
+        <div class="floating-chip chip-top">✦ &nbsp;Building with purpose</div><div class="floating-chip chip-bottom"><span>●</span> System operational</div>
+      </div>
+    </section>
 
-  <section>
-    <h2>Technical Skills</h2>
-    <p>Python • JavaScript • C++ • Git • AI/ML</p>
-  </section>
+    <section class="section shell" id="about" aria-labelledby="aboutTitle"><div class="section-heading"><p class="eyebrow">01 / ABOUT ME</p><h2 id="aboutTitle">More than just <span class="text-gradient">code.</span></h2></div><div class="about-grid"><p class="body-large" id="aboutText">I care about the whole picture: the people using the product, the engineers maintaining it, and the systems keeping it running. My approach is equal parts curiosity, pragmatism, and craftsmanship. I enjoy mentoring teammates and making hard technical decisions feel simple.</p><div class="stats"><div class="stat"><strong id="statYears">8+</strong><span>Years building software</span></div><div class="stat"><strong id="statProjects">20+</strong><span>Projects delivered</span></div><div class="stat"><strong id="statFocus">100%</strong><span>Focus on impact</span></div></div></div></section>
 
-  <section>
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>My AI Application</h3>
-      <p>Describe what you built and the
-         technologies you used.</p>
-      <a href="https://github.com/yourusername">
-        View Project
-      </a>
-    </div>
-  </section>
+    <section class="section shell" id="expertise" aria-labelledby="expertiseTitle"><div class="section-heading"><p class="eyebrow">02 / WHAT I DO</p><h2 id="expertiseTitle">My toolkit, <span class="text-gradient">your advantage.</span></h2><p class="section-subtitle">Technologies and disciplines I use to take ideas from whiteboard to production.</p></div><div class="expertise-grid"><article class="skill-card"><div class="skill-icon">⌘</div><h3>Backend & APIs</h3><p>Reliable services, well-designed APIs, and resilient distributed systems.</p><div class="tags" id="backendTags"></div></article><article class="skill-card"><div class="skill-icon">◇</div><h3>Frontend & Product</h3><p>Accessible, responsive interfaces with great performance and polish.</p><div class="tags" id="frontendTags"></div></article><article class="skill-card"><div class="skill-icon">↗</div><h3>Cloud & Platform</h3><p>Build pipelines, observability, infrastructure, and smooth deployments.</p><div class="tags" id="cloudTags"></div></article><article class="skill-card"><div class="skill-icon">✳</div><h3>Engineering Leadership</h3><p>Architecture reviews, mentorship, technical strategy, and team enablement.</p><div class="tags" id="leadershipTags"></div></article></div></section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: you@example.com</p>
-  </section>
+    <section class="section shell" id="projects" aria-labelledby="projectsTitle"><div class="section-heading"><p class="eyebrow">03 / SELECTED WORK</p><div class="heading-row"><h2 id="projectsTitle">Things I've <span class="text-gradient">built.</span></h2><span class="tiny-note">Selected projects / replace with your work</span></div><p class="section-subtitle">A few examples of the kinds of challenges I enjoy solving.</p></div><div class="filter-group" id="projectFilters" role="group" aria-label="Filter projects"><button type="button" class="filter active" data-filter="all" aria-pressed="true">All projects</button><button type="button" class="filter" data-filter="backend" aria-pressed="false">Backend</button><button type="button" class="filter" data-filter="fullstack" aria-pressed="false">Full stack</button><button type="button" class="filter" data-filter="ai" aria-pressed="false">AI / ML</button></div><div class="project-grid" id="projectGrid" aria-live="polite"></div></section>
+
+    <section class="section shell" id="experience" aria-labelledby="experienceTitle"><div class="section-heading"><p class="eyebrow">04 / EXPERIENCE</p><h2 id="experienceTitle">The path <span class="text-gradient">so far.</span></h2><p class="section-subtitle">Illustrative roles below — replace them with your real experience.</p></div><div class="timeline" id="experienceList"></div></section>
+
+    <section class="section shell contact-section" id="contact" aria-labelledby="contactTitle"><div class="contact-card"><div><p class="eyebrow">05 / SAY HELLO</p><h2 id="contactTitle">Have something <span class="text-gradient">in mind?</span></h2><p>Whether it's a great engineering challenge, a new role, or simply a conversation — my inbox is open.</p><div class="contact-actions"><a class="button primary" id="emailButton" href="mailto:you@example.com">Let's talk <span aria-hidden="true">↗</span></a><button class="button ghost" id="copyEmail" type="button">Copy email <span aria-hidden="true">⧉</span></button></div><p class="copy-message" id="copyMessage" role="status" aria-live="polite"></p></div><div class="contact-orbit" aria-hidden="true"><div class="orbit orbit-outer"></div><div class="orbit orbit-inner"></div><div class="orbit-center">✳</div></div></div></section>
+  </main>
+  <footer class="footer shell"><span>© <span id="currentYear"></span> <span id="footerName">Jasonlau Morgan</span>. Built with care.</span><div><a href="https://github.com/yourusername" id="footerGithub" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="#home">Back to top ↑</a></div></footer>
 </body>
 </html>
